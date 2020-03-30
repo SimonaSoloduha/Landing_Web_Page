@@ -1,16 +1,250 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
 	<meta charset="utf-8">
-	<title>Simona Soloduha</title>
-	<link rel="stylesheet" type="text/css" href="styles2.css">
-	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title>Diplom</title>
+	<link rel="preload" href="fonts/roboto-v20-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+
+	<link rel="stylesheet" type="text/css" href="style/normalize.css">
+	<link rel="stylesheet" type="text/css" href="style/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="style/Diplom.css">
+	<link rel="stylesheet" type="text/css" href="style/header.css">
+	<link rel="stylesheet" type="text/css" href="style/main.css">
+	<link rel="stylesheet" type="text/css" href="style/footer.css">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	
 </head>
 <body>
-	<div id="container">
-		<h1>Simona Soloduha</h1>
-		<p>официальный сайт</p>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="script/swiper.min.js"></script>
+
+	<header class="header">
+		<div class="container clearfix">
+
+			<section class="header_menu" arial-label="Меню">
+				<div class="header_menu_left">
+					<ul class="header_menu_desktop">
+						<li><a href="first" arial-label="Услуги">Услуги</a></li>
+						<li><a href="second" arial-label="Портфолио">Портфолио</a></li>
+						<li><a href="three" arial-label="Стоимость">Стоимость</a></li>
+					</ul>
+					<a href="#" class="header_burger" arial-label="Меню">
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
+					<a href="#" class="header_close" arial-label="Закрыть">
+						<span></span>
+						<span></span>
+					</a>
+
+				</div>
+				<div class="header_menu_right">
+					<div class="tel">
+						<a href="tel:+38 (050) 621-83-37" class="tel" arial-label="Телефон">+38 (050) 621-83-37</a>
+					</div>
+					<div class="call_back button_more">
+						<form>
+							<button>Заказать звонок</button>
+						</form>	
+					</div>
+					
+				</div>
+				<div class="call_mobile">
+					<a href="tel:+38 (050) 621-83-37" class="tel" arial-label="Телефон"></a>
+				</div>	
+			</section>
+
+
+
+			<section class="header_main">
+
+					<div class="header_main_ellipse">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 942 780" width="942" height="780" >
+							<defs>
+								<linearGradient id="grd1" gradientUnits="userSpaceOnUse"  x1="383.174" y1="775.676" x2="559.308" y2="12.756">
+									<stop offset="0" stop-color="#ff8f5a"/>
+									<stop offset="0.987" stop-color="#ff2f95"/>
+								</linearGradient>							    
+							</defs>
+							
+							<g id="1_экран">
+								<g id="bg+Человек+фигура">
+									<path id="Ellipse 1" class="shp0" d="M406.52 52.41C513.26 1.95 613.99 1.8 698.21 39.67C782.65 77.24 850.57 152.84 896.7 246.79C940.97 341.67 940.93 443.58 904.77 526.03C868.11 609.7 807.1 672.78 723.97 717.8C679.94 740.47 633.65 756 574.82 765.53C516.76 774.93 446.14 778.33 371.32 773.48C222.85 764.16 56.45 720.4 21.36 621.69C1.47 572.68 13.95 516.49 38.68 459.95C63.81 403.33 101.18 346.35 140.42 293.83C180.06 241.24 221.57 193.12 264.31 152.31C307.45 111.41 351.82 77.83 406.52 52.41L406.52 52.41Z" />
+								</g>
+							</g>
+						</svg>
+					</div>
+					<div class="header_main_container">
+						<figure class="header_main_wrap">
+							<div class="header_main_foto">
+								<img src="img/fotob.png" alt="Фото">
+							</div>	
+							<figcaption class="header_main_txt">
+								<hgroup class="header_main_hgroup">
+									<h1 class="my_name">Солодуха&nbsp;Симона</h1>
+									<h2 class="my_profession">Frontend-разработчик и веб-верстальщик</h2>
+									<form class="more_info">
+										<button>Узнать больше</button>
+									</form>	
+								</hgroup>	
+							</figcaption>
+						</figure>
+												
+					</div>			
+			</section>
+		</div>
+		<div class="elements">
+			<p class="element1">&lbrace; &rbrace;</p>
+			<p class="element2">&num;</p>
+			<p class="element3">&lt;div&gt;</p>
+			<p class="element4">&lt;div&gt;</p>
+			<p class="element5">&lt;/&gt;</p>
+			<p class="element6">&lt;/&gt;</p>	
+		</div>
+	</header>
+
+	<section class="first" id="first">
+		<div class="container clearfix">
+			<h3>Что я делаю</h3>
+			<div class="options">
+				<div class="option">
+					<img src="img/tools-and-utensils.png" alt="Вёрстка лендинг–страниц">
+					<div><span>Вёрстка лендинг–страниц и&nbsp;сайтов любой сложности</span></div>
+				</div>	
+				<div class="option">
+					<img src="img/responsive.png" alt="Адаптивная вёрстка">
+					<div><span>Адаптивная вёрстка под все браузеры и устройства</span></div>
+				</div>
+				<div class="option">
+					<img src="img/programming.png" alt="Frontend–разработка">
+					<div><span>Frontend–разработка и&nbsp;программирование</span></div>
+				</div>
+				<div class="option">
+					<img src="img/coding.png" alt="Исправление и доработка существующей вёрстки">
+					<div><span>Исправление и доработка существующей вёрстки</span></div>
+				</div>	
+			</div>
+			<form class="find_out_price">
+				<button>Узнать стоимость</button>
+			</form>
+		</div>
+
+	</section>
+		<section class="second" id="second">
+			<div class="container clearfix">
+				<h3>Примеры моих работ</h3>
+					<div class="swiper-container">
+					    <!-- Additional required wrapper -->
+					    <div class="swiper-wrapper">
+					        <!-- Slides -->
+					        <div class="swiper-slide">
+					        	<img src="img/rectangle_4_129.png" alt="картинка с сайта">
+					        	<div class="example_name">
+									<h4>Сайт психолога Веры Антоновой</h4>	
+								</div>
+							</div>
+					        <div class="swiper-slide">
+					        	<img src="img/rectangle_4_134.png" alt="картинка с сайта">
+					        	<div class="example_name">
+									<h4>Сайт магазина детской одежды</h4>	
+								</div>
+					        </div>
+					        <div class="swiper-slide">
+					        	<img src="img/rectangle_4_138.png" alt="картинка с сайта">
+					        	<div class="example_name">
+									<h4>Сайт магазина «Рыболов»</h4>	
+								</div>
+					        </div>
+					    </div>
+    					<div class="swiper-pagination"></div>
+					</div>
+					
+				<form class="red_button order_project">
+					<button>Заказать проект</button>
+				</form>	
+			</div>
+			<div class="my-swiper-button">
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
 	</div>
-	
+
+	</section>
+	<section class="three" id="three">
+		<div class="container clearfix">
+			<h3>Адаптивная вёрстка под все устройства и&nbsp;браузеры от 1000 рублей всего за&nbsp;4&nbsp;часа.*</h3>
+			<div class="three_text">* Срок и стоимость могут отличаться от заявленных и рассчитываются индивидуально, в&nbsp;зависимости&nbsp;от&nbsp;сложности задач.</div>	
+		</div>	
+	</section>
+
+	<footer class="footer">
+		<div class="container clearfix">
+			<div class="footer_flex">
+				<div class="footer_menu">
+					<ul>
+						<li><a href="first" arial-label="Услуги">Услуги</a></li>
+						<li><a href="second" arial-label="Портфолио">Портфолио</a></li>
+						<li><a href="three" arial-label="Стоимость">Стоимость</a></li>
+					</ul>
+				</div>
+				<div class="contacts">
+					<ul>
+						<li>
+							<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAMAAABhEH5lAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAORQTFRFAAAA+giR+giR+giR+giR+gmP+gmP+gmP+gmP+guN+guN+guN+guN+g2K+g2K+RCH+RCH+ROE+ROE+ROE+RWA+RWA+RWA+Rl9+Rl9+Rl9+Bx5+Bx5+Bx5+Bx5+CB0+CB0+CB0+CB0+CNw+CNw+CNw+CNw9ydr9ydr9ydr9ydr9ydr9ydr9ydr9ydr9ydr9ytn9ytn9ytn9ytn9ytn9ytn9ytn9y9i9y9i9y9i9y9i9y9i9jNd9jNd9jNd9jNd9jpV9jpV9jpV9Ew/9Ew/9Ew/9Ew/81su81su81su81su81su81suq6y79gAAAEx0Uk5TAJL+8yhk//co6P/3KP/z//7+/5Lu/6+h/+US+/+GhP/+RtL//EYK7P/+hIP98igd9P/lovcoHfT/9ygX6P/0ArH/Sub/oU3K9v/tcE7UgrMAAACQSURBVHicVc3FFsJADIXhYIO7a3F3iruWwvu/D2mHMyf5Fln8ixsAh9PlBsYjhPD6WPIHUDBEU9gWoSlqi9EUT1iSNKXSKMPmszmUZ6lQLKEyaxUNVWus1Ruo2aKp3emiXh9gMByNZZtMZ5b5Ao++lG213ijbnWz7w1E5/ffOl6uintzuD+lJPr+Mt2l+vvADBM8X2Bg1FuUAAAAASUVORK5CYII=" alt="Телефон">
+							<a href="tel:+38 (050) 621-83-37" class="tel" arial-label="Телефон">+38 (050) 621-83-37</a>
+						</li>
+						<li>
+							<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAPCAMAAAA4caRkAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAL1QTFRF+giR+giR+giR+giR+gqP+gqP+gyM+gyM+gyM+Q+I+Q+I+Q+I+RKF+RKF+RKF+RKF+RKF+RKF+RWA+RWA+RWA+RWA+RWA+RWA+RWA+RWA+RWA+Bl8+Bl8+Bl8+Bl8+Bl8+Bl8+B13+B13+B13+B13+B13+B13+B13+B13+CJy+CJy+CJyAAAA+CJy+CJy9yZs9yZs9yZs9yZs9yZs9yZs9ytn9ytn9ytn9ytn9zBh9jVb9UVH81kx81kx81kxunwt5AAAAD90Uk5TnP3/m/7//P/6d/95DGH4//ll9FIIrf7/rwpP/9UoI9Ml//6vCk/s7VD/+YAAhvr/7EoMk8n/4YBN////nP3/SmcHqgAAAItJREFUeJxtyNUWgkAAhOHBDixUjFVhAYuSUDDA938sVrGO7Hcz5x9AKBUJZVSqXKjVeRpotnjaEDvd3r/+QIQ0HI3lyS95OptLIGSxXCnkS1FVlqCUarqx3tDcdmfoGlvsH0zLdly2rmNb5vPBIef5QXgMA997NU5vUXyOo0/hwocrH258SNJ7UZpkRDstNZg9mf0AAAAASUVORK5CYII=" alt="Почта">
+							<a href="mail:LS460Simona@gmail.com" class="mail" arial-label="Email">LS460Simona@gmail.com</a>
+						</li>
+					</ul>
+				</div>
+				<div class="connect">
+					<button>Заказать звонок</button>
+					<ul class="links" arial-label="Ссылки">
+						<li class="logo-vk bg-vk" arial-label="Ссылка на vkontakte"><a href="#"></a></li>
+						<li class="logo-fb bg-facebook_logo" arial-label="Ссылка на facebook"><a href="#"></a></li>
+						<li class="logo-tw bg-twitter" arial-label="Ссылка на twitter"><a href="#"></a></li>
+						<li class="logo-ins bg-instagram" arial-label="Ссылка на instagram"><a href="#"></a></li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+		<div class="footer-bottom">
+			<span>© Солодуха Симона, 0000 – 0000</span>
+		</div>
+		
+	</footer>
+	<script src="script/modernizr-custom.js"></script>
+	<script type="text/javascript" src="script/diplom.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

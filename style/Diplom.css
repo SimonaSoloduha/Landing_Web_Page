@@ -1,0 +1,137 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/roboto-v20-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/roboto-v20-latin_cyrillic-regular.woff') format('woff'); /* Modern Browsers */
+
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fonts/roboto-v20-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/roboto-v20-latin_cyrillic-700.woff') format('woff'); /* Modern Browsers */
+
+}
+
+
+html {
+	box-sizing: border-box; /* изменения алгоритма расчета ширины и высоты элемента. Свойства width и height включают в себя значения полей и границ, но не отступов (margin).*/
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit; /* Наследует значение родителя. */
+}
+
+body { /* Задаем наболее часто всречающиеся свайства */
+	min-width: 320px;
+
+	color: #1f1f24;
+	
+	font-family: Roboto, Arial, sans-serif;
+	font-style: normal;
+	font-display: swap;
+
+	font-size: 25px;
+	line-height: 54px;
+	font-weight: 700;
+} 
+* {  /* Задаем всем элемента чаще всего используемые параметры, изменяем ненужные параметры по умолчанию */
+	margin: 0;
+	padding: 0;
+
+	box-sizing: border-box;
+	outline: none;
+}
+
+img { /* Максимальная ширина для картинок 100%, высота авто */
+	max-width: 100%;  
+	height: auto;
+}
+a { /* Сброс стандартных стилей ссылок, цвет наследуется от родителя */
+	
+	color: inherit;
+	text-decoration: none; 
+}
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none; /* Сброс стандартных стилей для списка, онулирование отступов по умолчанию */	
+}
+
+h1, h2, h3, p { /* Онулирование отступов по умолчанию для заголовков и элементов "р" */
+    padding: 0;
+    margin: 0;
+}
+
+.visually-hidden { /* Прячем невидимый заголовок  */
+	padding: 0 !important;
+	border: 0 !important;
+	height: 1px !important;
+	width: 1px !important;
+
+	position: absolute !important; /* Задаем абсолютое позиционирование (другие элементы веут себя так, будто этого элемента нет). !important дает больше важности заданному CSS свойству */
+	clip: rect(1px, 1px, 1px, 1px); /* Прячем часть элемента (в нашем случаее весь) */
+	overflow: hidden; /* Содержания блочного элемента, которое не помещается и выходит за область заданных размеров будет скрыто.*/
+}
+
+.clearfix::after { /* Убирает "схлопываемость" при использовании флоатов */
+	content: "";
+	display: block;
+	clear: both; /* Запрещает обтекание элемента другими элементами справа и слева. Если задано обтекание элемента с помощью свойства float, то clear отменяет его действие для указанных сторон.
+ */ 
+
+}
+.container { /* Контейнер фиксированной ширины, в котором находится весь контент страницы */
+    width: 100%;
+	max-width: 1232px;
+	padding: 0 31px;
+	margin: 0 auto;
+}
+.display_none {
+  display: none !important;
+}
+.display_block {
+  display: block !important;
+}
+button {
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .container { /* Контейнер фиксированной ширины, в котором находится весь контент страницы */
+    padding: 0 40px;
+  }
+}
+@media (max-width: 768px) {
+  .container { /* Контейнер фиксированной ширины, в котором находится весь контент страницы */
+    padding: 0 20px;
+  }
+  body { /* Задаем наболее часто всречающиеся свайства */
+    line-height: 1.3;
+  }
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
